@@ -17,6 +17,91 @@
         background-color: orange;
         color: white;
     }
+    body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* ===== TITRE ===== */
+h1 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff7b00, #ffb347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== BLOC INFO ===== */
+#info {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    max-width: 600px;
+}
+
+/* ===== TEXTE DONNÉES ===== */
+#territoireData p {
+    font-size: 15px;          /* plus petit */
+    margin: 6px 0;            /* moins d’espace vertical */
+    padding: 6px 10px;        /* moins de padding */
+    border-left: 4px solid orange;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+
+#territoireData p:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+}
+
+/* Valeurs en gras */
+#territoireData p strong {
+    color: #ff7b00;
+}
+
+/* ===== BOUTONS PLUS MODERNES ===== */
+#buttons button {
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+#buttons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+#buttons button.active {
+    background: linear-gradient(90deg, #ff7b00, #ffb347);
+}
+#buttons {
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center;
+    margin-bottom: 15px;
+}
+#info {
+    margin: 40px auto;   /* centre horizontalement */
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    max-width: 700px;    /* largeur contrôlée */
+    width: 90%;          /* responsive */
+}
+
   </style>
 </head>
 <body>
@@ -28,8 +113,8 @@
   <!-- Boutons et info -->
   <div id="info">
       <div id="buttons">
-          <button id="btn1" class="active">Mode 1</button>
-          <button id="btn2">Mode 2</button>
+          <button id="btn1" class="active">Sélection unique</button>
+          <button id="btn2">Sélection multiple</button>
       </div>
       <div id="territoireData"></div>
   </div>
