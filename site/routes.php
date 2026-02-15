@@ -8,9 +8,6 @@
 			case "europeN":
 				$affiche = "pageMap/europeN.php";
 				break;
-			case "games":
-				$affiche = "catalogue.php";
-				break;
 			default:
 				$affiche = "lostinspace.php";
 		}
