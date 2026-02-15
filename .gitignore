@@ -1,0 +1,13 @@
+# Ignorer les dossiers et fichiers système MySQL
+database/sys/
+database/mysql/
+database/#innodb_temp/
+database/monsite/
+database/#innodb_redo/
+database/performance_schema/
+database/*.dblwr
+database/auto.cnf
+
+# Ignorer tous les fichiers MySQL temporaires et système
+database/
+!database/dumps/   # inclure seulement un sous-dossier avec tes dumps SQL ou fichiers importants
